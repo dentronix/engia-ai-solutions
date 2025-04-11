@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Building, Factory, Tool, Zap } from 'lucide-react';
+import { ArrowRight, Building, Factory, Wrench, Zap } from 'lucide-react';
 
 // Types for the case studies
 type CaseStudy = {
@@ -136,7 +136,7 @@ const Cases = () => {
             onClick={() => setFilter('mecanica')}
             className={filter === 'mecanica' ? "bg-engia-blue" : ""}
           >
-            <Tool className="w-4 h-4 mr-2" />
+            <Wrench className="w-4 h-4 mr-2" />
             Engenharia Mecânica
           </Button>
           <Button 
