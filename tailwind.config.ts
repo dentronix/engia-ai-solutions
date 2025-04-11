@@ -53,25 +53,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// Custom colors
-				engia: {
-					blue: '#2A5C82',
-					'blue-light': '#4A7CA2',
-					'blue-dark': '#1A4C72',
-					orange: '#FF6B35',
-					'orange-light': '#FF8B55',
-					'orange-dark': '#E54B15',
-					teal: '#00C4CC',
+				// Dental clinic colors
+				dental: {
+					blue: '#6EC1E4',
+					'blue-light': '#8FD3F0',
+					'blue-dark': '#4CA9D0',
+					white: '#FFFFFF',
+					'green-water': '#7FC6A4',
+					'green-light': '#9FD7BC',
+					'green-dark': '#5FB18C',
 					'gray-light': '#F5F5F5',
 					'gray-medium': '#E0E0E0',
 					'gray-dark': '#666666',
@@ -123,6 +113,10 @@ export default {
 					'100%': { 
 						backgroundPosition: '0% 50%' 
 					}
+				},
+				'pulse-light': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
@@ -130,7 +124,12 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'slide-in-right': 'slide-in-right 0.5s ease-out',
-				'background-shine': 'background-shine 3s ease infinite'
+				'background-shine': 'background-shine 3s ease infinite',
+				'pulse-light': 'pulse-light 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+			},
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'opensans': ['Open Sans', 'sans-serif']
 			}
 		}
 	},

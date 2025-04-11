@@ -1,29 +1,29 @@
 
 import React, { useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import AboutUs from '@/components/AboutUs';
-import Cases from '@/components/Cases';
-import Services from '@/components/Services';
-import Blog from '@/components/Blog';
-import ContactCTA from '@/components/ContactCTA';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/dental/Navbar';
+import Hero from '@/components/dental/Hero';
+import AboutDoctor from '@/components/dental/AboutDoctor';
+import Services from '@/components/dental/Services';
+import Booking from '@/components/dental/Booking';
+import Testimonials from '@/components/dental/Testimonials';
+import FAQ from '@/components/dental/FAQ';
+import Footer from '@/components/dental/Footer';
 
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "EngiaAI - Soluções de IA para Engenharia";
+    document.title = "Espaço Sorriso Odontologia - Agendamento Online";
   }, []);
 
   return (
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <AboutUs />
-      <Cases />
+      <AboutDoctor />
       <Services />
-      <Blog />
-      <ContactCTA />
+      <Booking />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   );
